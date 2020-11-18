@@ -1,0 +1,131 @@
+<tellimused>
+    <arve id="1">
+        <tellija>
+            <nimi>Martin</nimi>
+            <perenimi>Lappolainen</perenimi>
+            <isikukood>50236548921</isikukood>
+            <address>Ringi 54-46</address>
+        </tellija>
+        <toodenimi>Samsung S10+</toodenimi>
+        <kogus>1</kogus>
+        <hind>800$</hind>
+        <kuupaev>12.11.2019</kuupaev>
+    </arve>
+
+    <arve id="2">
+        <tellija>
+            <nimi>Valeria</nimi>
+            <perenimi>Pautova</perenimi>
+            <isikukood>42369874125</isikukood>
+            <address>Sõprusse pst 182</address>
+        </tellija>
+        <toodenimi>Iphone 12 plus</toodenimi>
+        <kogus>1</kogus>
+        <hind>998$</hind>
+        <kuupaev>23.08.2020</kuupaev>
+    </arve>
+
+    <arve id="3">
+        <tellija>
+            <nimi>Aleksandr</nimi>
+            <perenimi>Ivanov</perenimi>
+            <isikukood>50006987125</isikukood>
+            <address>Ringi 56</address>
+        </tellija>
+        <toodenimi>Oneplus 8 pro</toodenimi>
+        <kogus>1</kogus>
+        <hind>900$</hind>
+        <kuupaev>12.05.2020</kuupaev>
+    </arve>
+
+    <arve id="4">
+        <tellija>
+            <nimi>Vladislav</nimi>
+            <perenimi>Kruume</perenimi>
+            <isikukood>52369412365</isikukood>
+            <address>Mustakivi tee 10</address>
+        </tellija>
+        <toodenimi>Nokia 8.3 5G</toodenimi>
+        <kogus>1</kogus>
+        <hind>699$</hind>
+        <kuupaev>09.11.2002</kuupaev>
+    </arve>
+
+    <arve id="5">
+        <tellija>
+            <nimi>Vytautas</nimi>
+            <perenimi>Kilinskas</perenimi>
+            <isikukood>56210347820</isikukood>
+            <address>Sõprusse pst 182</address>
+        </tellija>
+        <toodenimi>Xiaomi Mi 10T pro</toodenimi>
+        <kogus>1</kogus>
+        <hind>600$</hind>
+        <kuupaev>19.07.2018</kuupaev>
+    </arve>
+
+    <arve id="6">
+        <tellija>
+            <nimi>Danila</nimi>
+            <perenimi>Nesterko</perenimi>
+            <isikukood>562314778985</isikukood>
+            <address>Paldiski mnt 94-23</address>
+        </tellija>
+        <toodenimi>CAT S62 pro</toodenimi>
+        <kogus>1</kogus>
+        <hind>750$</hind>
+        <kuupaev>12.09.2020</kuupaev>
+    </arve>
+
+    <arve id="7">
+        <tellija>
+            <nimi>Anastasia</nimi>
+            <perenimi>Tšausova</perenimi>
+            <isikukood>48536921074</isikukood>
+            <address>Narva mnt 59-60</address>
+        </tellija>
+        <toodenimi>Sony Xperia 5 II</toodenimi>
+        <kogus>1</kogus>
+        <hind>400$</hind>
+        <kuupaev>17.03.2020</kuupaev>
+    </arve>
+
+    <arve id="8">
+        <tellija>
+            <nimi>Nikita</nimi>
+            <perenimi>Rudnev</perenimi>
+            <isikukood>52946932104</isikukood>
+            <address>Ehitaja tee 48-54</address>
+        </tellija>
+        <toodenimi>Huawei P40</toodenimi>
+        <kogus>1</kogus>
+        <hind>299$</hind>
+        <kuupaev>01.09.2020</kuupaev>
+    </arve>
+
+    <arve id="9">
+        <tellija>
+            <nimi>Egor</nimi>
+            <perenimi>Oleynik</perenimi>
+            <isikukood>56478921365</isikukood>
+            <address>Kersti tn 28</address>
+        </tellija>
+        <toodenimi>MyPhone Halo</toodenimi>
+        <kogus>20</kogus>
+        <hind>459$</hind>
+        <kuupaev>15.05.2019</kuupaev>
+    </arve>
+
+    <arve id="10">
+        <tellija>
+            <nimi>Martin</nimi>
+            <perenimi>Lappolainen</perenimi>
+            <isikukood>50236548921</isikukood>
+            <address>Ringi 54-46</address>
+        </tellija>
+        <toodenimi>Samsung A72</toodenimi>
+        <kogus>1</kogus>
+        <hind>698$</hind>
+        <kuupaev>12.11.2018</kuupaev>
+    </arve>
+</tellimused>
