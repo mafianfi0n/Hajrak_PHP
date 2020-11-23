@@ -153,32 +153,35 @@ $xml = simplexml_load_file("andmed.xml");
 </form>
 <br/>
 <table border="1">
-    <tr>
-        <th>Toodenimi</th>
-        <th>Kogus</th>
-        <th>Hind</th>
-        <th>Tellija Nimi</th>
-        <th>Tellija Perenimi</th>
-        <th>Tellija Isikukood</th>
-        <th>Tellija Address</th>
-        <th>Kuupäev</th>
-    </tr>
     <?php
-    $query = $_POST['search'];
-    foreach ($xml->children() as $arve)
-    {
-        $tellija = $arve -> tellija;
-        if($tellija->nimi == $query){
-            echo "<tr>
-            <td>".$arve->toodenimi."</td>
-            <td>$arve->kogus</td>
-            <td>$arve->hind</td>
-            <td>$tellija->nimi</td>
-            <td>$tellija->perenimi</td>
-            <td>$tellija->isikukood</td>
-            <td>$tellija->address</td>
-            <td>$arve->kuupaev</td>
-            </tr>";
+    if (isset($_POST['search'])) {
+        echo '<tr>';
+        echo    '<th>Toodenimi</th>';
+        echo    '<th>Kogus</th>';
+        echo    '<th>Hind</th>';
+        echo   '<th>Tellija Nimi</th>';
+        echo    '<th>Tellija Perenimi</th>';
+        echo    '<th>Tellija Isikukood</th>';
+        echo    '<th>Tellija Address</th>';
+        echo    '<th>Kuupäev</th>';
+        echo '</tr>';
+        $query = $_POST['search'];
+        echo '<tr>';
+        foreach ($xml->children() as $arve)
+        {
+            $tellija = $arve -> tellija;
+            if($tellija->nimi == $query){
+                echo "<tr>
+                <td>".$arve->toodenimi."</td>
+                <td>$arve->kogus</td>
+                <td>$arve->hind</td>
+                <td>$tellija->nimi</td>
+                <td>$tellija->perenimi</td>
+                <td>$tellija->isikukood</td>
+                <td>$tellija->address</td>
+                <td>$arve->kuupaev</td>
+                </tr>";
+            }
 
         }
     }
@@ -187,27 +190,33 @@ $xml = simplexml_load_file("andmed.xml");
 <br/>
 <div>
     <h2 id="gg">Добавление данных:</h2>
-<form action="?" method="POST">
-    Tellija nimi: <input id="gg" type="text" name="nimi"><br/><br/>
-    Tellija address: <input id="gg" type="text" name="address"><br/><br/>
-    Tellija isikukood: <input id="gg" type="text" name="isikukood"><br/><br/>
-    <input type="submit" value="Sisesta">
-</form>
+    <form action="index.php">
+        Tellija nimi: <input id="gg" type="text" name="nimi"><br/><br/>
+        Tellija address: <input id="gg" type="text" name="address"><br/><br/>
+        Tellija isikukood: <input id="gg" type="text" name="isikukood"><br/><br/>
+        <input name="json" id="button" type="submit" value="Sisesta">
+    </form>
 </div>
 <br>
 
 <?php
-if(isset($_POST['nimi'])){
-    unset($_POST['submit']);
-    $file = "andmed.json";
-    $data = json_decode(file_get_contents($file),TRUE);
-    $_POSTED['Id'] = end($data['andmed'])['Id']+1;
-    $_POSTED["nimi"] = $_POST["nimi"];
-    $_POSTED["address"] = $_POST["address"];
-    $_POSTED["isikukood"] = $_POST["isikukood"];
-    array_push($data['andmed'], $_POSTED);
-    file_put_contents($file, json_encode($data,JSON_UNESCAPED_UNICODE));
+if (isset($_POST['json'])){
+    if (empty($_POST['nimi']) || empty($_POST['address']) || empty($_POST['isikukood'])){
+        echo "<h4>Обязательно заполните все поля!</h4>";
+    }
+        else {
+            unset($_POST['submit']);
+            $file = "andmed.json";
+            $data = json_decode(file_get_contents($file), TRUE);
+            $_POSTED['Id'] = end($data['andmed'])['Id'] + 1;
+            $_POSTED["nimi"] = $_POST["nimi"];
+            $_POSTED["address"] = $_POST["address"];
+            $_POSTED["isikukood"] = $_POST["isikukood"];
+            array_push($data['andmed'], $_POSTED);
+            file_put_contents($file, json_encode($data, JSON_UNESCAPED_UNICODE));
+
+        }
 }
 ?>
-<h3><a href="andmed.json">JSON файл</a></h3>
+<h3><a target="_blank" href="andmed.json">JSON файл</a></h3>
 <h3><a href="DocumentationIvanov.docx">Документация</a></h3>
