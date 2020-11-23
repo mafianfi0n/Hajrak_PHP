@@ -185,3 +185,4 @@ foreach ($xml->children() as $arve)
 ?>
 </table>
 <h1><a href="andmed.json">JSON файл</a></h1>
+<h1><a href="DocumentationIvanov.docx">Документация</a></h1>

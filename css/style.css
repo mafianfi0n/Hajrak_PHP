@@ -12,6 +12,9 @@ h2 {
     font-size: 15px;
     text-align: center;
 }
+h3{
+    text-align: right;
+}
 table {
     margin: auto;
     border-spacing: 0 10px;
