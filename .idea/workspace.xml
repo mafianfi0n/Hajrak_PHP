@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8333fb1b-bf48-44c3-8393-491ca9eff8b5" name="Default Changelist" comment="" />
+    <list default="true" id="8333fb1b-bf48-44c3-8393-491ca9eff8b5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/andmed.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,7 +27,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../phpSuguguu" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -35,6 +40,7 @@
       <updated>1605681755681</updated>
       <workItem from="1605681756709" duration="7633000" />
       <workItem from="1605690500638" duration="16000" />
+      <workItem from="1606113509591" duration="2022000" />
     </task>
     <servers />
   </component>
@@ -46,6 +52,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="168" key="#PHP/0.0.1920.1050@0.0.1920.1050" timestamp="1605683375331" />
+    <state x="740" y="280" key="FileChooserDialogImpl" timestamp="1606113559667">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="740" y="280" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1606113559667" />
     <state x="795" y="448" key="NewPhpFileDialog" timestamp="1605681766485">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

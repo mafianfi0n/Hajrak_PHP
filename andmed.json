@@ -1,0 +1,132 @@
+[
+  {
+    "@id": "1",
+    "tellija": {
+      "nimi": "Martin",
+      "perenimi": "Lappolainen",
+      "isikukood": "50236548921",
+      "address": "Ringi 54-46"
+    },
+    "toodenimi": "Samsung S10+",
+    "kogus": "1",
+    "hind": "800$",
+    "kuupaev": "12.11.2019"
+  },
+  {
+    "@id": "2",
+    "tellija": {
+      "nimi": "Valeria",
+      "perenimi": "Pautova",
+      "isikukood": "42369874125",
+      "address": "Sõprusse pst 182"
+    },
+    "toodenimi": "Iphone 12 plus",
+    "kogus": "1",
+    "hind": "998$",
+    "kuupaev": "23.08.2020"
+  },
+  {
+    "@id": "3",
+    "tellija": {
+      "nimi": "Aleksandr",
+      "perenimi": "Ivanov",
+      "isikukood": "50006987125",
+      "address": "Ringi 56"
+    },
+    "toodenimi": "Oneplus 8 pro",
+    "kogus": "1",
+    "hind": "900$",
+    "kuupaev": "12.05.2020"
+  },
+  {
+    "@id": "4",
+    "tellija": {
+      "nimi": "Vladislav",
+      "perenimi": "Kruume",
+      "isikukood": "52369412365",
+      "address": "Mustakivi tee 10"
+    },
+    "toodenimi": "Nokia 8.3 5G",
+    "kogus": "1",
+    "hind": "699$",
+    "kuupaev": "09.11.2002"
+  },
+  {
+    "@id": "5",
+    "tellija": {
+      "nimi": "Vytautas",
+      "perenimi": "Kilinskas",
+      "isikukood": "56210347820",
+      "address": "Sõprusse pst 182"
+    },
+    "toodenimi": "Xiaomi Mi 10T pro",
+    "kogus": "1",
+    "hind": "600$",
+    "kuupaev": "19.07.2018"
+  },
+  {
+    "@id": "6",
+    "tellija": {
+      "nimi": "Danila",
+      "perenimi": "Nesterko",
+      "isikukood": "562314778985",
+      "address": "Paldiski mnt 94-23"
+    },
+    "toodenimi": "CAT S62 pro",
+    "kogus": "1",
+    "hind": "750$",
+    "kuupaev": "12.09.2020"
+  },
+  {
+    "@id": "7",
+    "tellija": {
+      "nimi": "Anastasia",
+      "perenimi": "Tšausova",
+      "isikukood": "48536921074",
+      "address": "Narva mnt 59-60"
+    },
+    "toodenimi": "Sony Xperia 5 II",
+    "kogus": "1",
+    "hind": "400$",
+    "kuupaev": "17.03.2020"
+  },
+  {
+    "@id": "8",
+    "tellija": {
+      "nimi": "Nikita",
+      "perenimi": "Rudnev",
+      "isikukood": "52946932104",
+      "address": "Ehitaja tee 48-54"
+    },
+    "toodenimi": "Huawei P40",
+    "kogus": "1",
+    "hind": "299$",
+    "kuupaev": "01.09.2020"
+  },
+  {
+    "@id": "9",
+    "tellija": {
+      "nimi": "Egor",
+      "perenimi": "Oleynik",
+      "isikukood": "56478921365",
+      "address": "Kersti tn 28"
+    },
+    "toodenimi": "MyPhone Halo",
+    "kogus": "20",
+    "hind": "459$",
+    "kuupaev": "15.05.2019"
+  },
+  {
+    "@id": "10",
+    "tellija": {
+      "nimi": "Martin",
+      "perenimi": "Lappolainen",
+      "isikukood": "50236548921",
+      "address": "Ringi 54-46"
+    },
+    "toodenimi": "Samsung A72",
+    "kogus": "1",
+    "hind": "698$",
+    "kuupaev": "12.11.2018"
+  }
+]

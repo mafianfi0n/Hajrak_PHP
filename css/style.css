@@ -1,5 +1,11 @@
+input{
+    margin-left: 25%;
+}
 body {
     background-color: antiquewhite;
+}
+h1{
+    text-align: center;
 }
 h2 {
     font-family: 'Open Sans', sans-serif;
