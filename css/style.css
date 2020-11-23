@@ -7,6 +7,9 @@ body {
 h1{
     text-align: center;
 }
+h2#gg{
+    margin-right: 35%;
+}
 h2 {
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
@@ -14,6 +17,12 @@ h2 {
 }
 h3{
     text-align: right;
+}
+input#gg{
+    margin-left: auto;
+}
+div{
+    margin-left: 25%;
 }
 table {
     margin: auto;

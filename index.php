@@ -8,6 +8,7 @@ $xml = simplexml_load_file("andmed.xml");
     <title>Э-магазин</title>
 </head>
 <body>
+<h1>Система управления складами</h1>
 <h2>Заказы э-магазина:</h2>
 <table border="1">
     <tr>
@@ -20,7 +21,7 @@ $xml = simplexml_load_file("andmed.xml");
         <th>Tellija Address</th>
         <th>Kuupäev</th>
     </tr>
-<?php
+    <?php
     foreach ($xml->children() as $arve)
     {
         $tellija = $arve -> tellija;
@@ -162,13 +163,13 @@ $xml = simplexml_load_file("andmed.xml");
         <th>Tellija Address</th>
         <th>Kuupäev</th>
     </tr>
-<?php
-$query = $_POST['search'];
-foreach ($xml->children() as $arve)
-{
-    $tellija = $arve -> tellija;
-    if($tellija->nimi == $query){
-        echo "<tr>
+    <?php
+    $query = $_POST['search'];
+    foreach ($xml->children() as $arve)
+    {
+        $tellija = $arve -> tellija;
+        if($tellija->nimi == $query){
+            echo "<tr>
             <td>".$arve->toodenimi."</td>
             <td>$arve->kogus</td>
             <td>$arve->hind</td>
@@ -179,10 +180,34 @@ foreach ($xml->children() as $arve)
             <td>$arve->kuupaev</td>
             </tr>";
 
+        }
     }
+    ?>
+</table>
+<br/>
+<div>
+    <h2 id="gg">Добавление данных:</h2>
+<form action="?" method="POST">
+    Tellija nimi: <input id="gg" type="text" name="nimi"><br/><br/>
+    Tellija address: <input id="gg" type="text" name="address"><br/><br/>
+    Tellija isikukood: <input id="gg" type="text" name="isikukood"><br/><br/>
+    <input type="submit" value="Sisesta">
+</form>
+</div>
+<br>
 
+<?php
+if(isset($_POST['nimi'])){
+    unset($_POST['submit']);
+    $file = "andmed.json";
+    $data = json_decode(file_get_contents($file),TRUE);
+    $_POSTED['Id'] = end($data['andmed'])['Id']+1;
+    $_POSTED["nimi"] = $_POST["nimi"];
+    $_POSTED["address"] = $_POST["address"];
+    $_POSTED["isikukood"] = $_POST["isikukood"];
+    array_push($data['andmed'], $_POSTED);
+    file_put_contents($file, json_encode($data,JSON_UNESCAPED_UNICODE));
 }
 ?>
-</table>
-<h1><a href="andmed.json">JSON файл</a></h1>
-<h1><a href="DocumentationIvanov.docx">Документация</a></h1>
+<h3><a href="andmed.json">JSON файл</a></h3>
+<h3><a href="DocumentationIvanov.docx">Документация</a></h3>
